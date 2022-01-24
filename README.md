@@ -8,6 +8,25 @@ Devices could be accessed via IMEI (a 15 digit number hardcoded to the device) o
 
 Commands were referenced from manuals, and parameters were carefully crafted on a per-use basis. These were built into a command for use in bulk-updates. This library is what enabled both automated and manual updates of devices in this way. The default command was the most used and enabled the device to report to a centralized server from the manufacturer.
 
-### Misc
+This client and the other files were organized to be used by me for daily/weekly ongoing tasks, as well as for custom automation deployment (AWS Lambda or VPS) on an as-needed basis.
+
+### __init__.py, .env, Pipfile
+
+Boilerplate for reusability.
+
+### session.py, client.py, exceptions.py
+
+These are the main classes for the API client itself. Written to load credentials from .env (see example).
+
+### refurb_check.py
+Refurbishment
+
+### parse_timestamps.py
+Pendulum
+
+### format_imeis.py
+Click
+
+### tools.py
 
 tools.py contains some often used code for scripts that utilized this client and were automated by an external system. It was also used in parsing slack commands (in progress, not completed).
