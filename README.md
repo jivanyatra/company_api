@@ -22,10 +22,14 @@ These are the main classes for the API client itself. Written to load credential
 Refurbishment
 
 ### parse_timestamps.py
-Pendulum
+
+Pendulum was a key library to use while parsing the logs that came out of AWS Cloudwatch. The goal was to clearly see the differences between the device's GPS lock time, the message send time, and the receipt time on AWS's end. This was super helpful in identifying issues related to reception and also issues receiving them over the cellular network itself.
+
+The conversion functions weren't needed, but were planned for future business-to-business deployments that were upcoming.
 
 ### format_imeis.py
-Click
+
+This is a command-line tool to input a list of IMEIs from a different department who had the physical inventory
 
 ### tools.py
 
