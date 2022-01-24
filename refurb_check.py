@@ -7,7 +7,7 @@ from requests_oauthlib import OAuth2Session
 static_data = """
 
 Account Name: refurbtest
-Account Email: refurbtest@spytec.com
+Account Email: refurbtest@company.com
 Plan: Basic
 Device Names: IMEI
 
